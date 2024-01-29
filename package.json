@@ -7,10 +7,11 @@
   "scripts": {
     "build": "",
     "build-dts": "tsc -p tsconfig.build.json && rollup -c rollup.dts.config.js",
-    "check": "tsc --incremental --noEmit",
+    "check": "tsc --noEmit",
     "lint": "eslint  ./src --ext .js,.ts,.tsx",
     "format": "prettier  --write --cache .",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "test": "vitest --config ./vitest.config.ts"
   },
   "keywords": [],
   "author": "",
@@ -45,6 +46,8 @@
     "rollup-plugin-dts": "^6.1.0",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.3.3",
-    "vite": "^5.0.12"
+    "vite": "^5.0.12",
+    "vite-tsconfig-paths": "^4.3.1",
+    "vitest": "^1.2.2"
   }
 }
