@@ -21,7 +21,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged && pnpm check",
-    "commit-msg": "node scripts/verify-commit.js"
+    "commit-msg": "pnpm run test node scripts/verify-commit.js"
   },
   "lint-staged": {
     "*.{js,json}": [
