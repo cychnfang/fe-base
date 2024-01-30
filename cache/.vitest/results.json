@@ -1,6 +1,6 @@
 {
   "version": "1.2.2",
   "results": [
-    [":tests/test-componet.test.ts", { "duration": 12, "failed": true }]
+    [":tests/test-componet.test.ts", { "duration": 15, "failed": true }]
   ]
 }

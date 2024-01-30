@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import TestComponent from '@/components/test-component/index.vue'
 </script>
 
 <template>
-  <div>1231</div>
+  <test-component></test-component>
 </template>
 
 <style scoped></style>

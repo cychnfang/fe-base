@@ -8,7 +8,7 @@ const handleClick = () => {
 </script>
 
 <template>
-  <div id="test" @click="handleClick">{{ count }}</div>
+  <div id="test" @click="handleClick">current count: {{ count }}</div>
 </template>
 
 <style scoped></style>
