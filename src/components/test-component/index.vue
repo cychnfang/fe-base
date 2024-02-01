@@ -1,14 +1,10 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
-const count = ref(0)
-const handleClick = () => {
-  count.value++
-}
+import useCounter from '@/hooks/useCount'
+const [count, update] = useCounter(1)
 </script>
 
 <template>
-  <div id="test" @click="handleClick">current count: {{ count }}</div>
+  <div id="test" @click="update">current count: {{ count }}</div>
 </template>
 
 <style scoped></style>
