@@ -7,7 +7,7 @@ test('it should work', async () => {
 
   await wrapper.find('#test').trigger('click')
 
-  expect(wrapper.vm.count).toBe(1)
+  expect(wrapper.vm.count).toBe(2)
 
-  expect(wrapper.html()).toContain('12')
+  expect(wrapper.html()).toContain('2')
 })

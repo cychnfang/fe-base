@@ -2,10 +2,10 @@ module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['import', '@typescript-eslint'],
   rules: {
-    'no-debugger': 'error',
-  },
+    'no-debugger': 'error'
+  }
 }
