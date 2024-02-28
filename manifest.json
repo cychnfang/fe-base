@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "QR Code Ganerate",
+  "description": "生成一个qrcode",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "chrome_extension_qrcode.png"
+  }
+}

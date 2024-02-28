@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@testing-library/vue": "^8.0.1",
-    "@types/node": "^20.11.6",
+    "@types/qrcode": "^1.5.5",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "@typescript-eslint/parser": "^6.19.1",
     "@vitejs/plugin-vue": "^5.0.3",
@@ -49,7 +49,9 @@
     "picocolors": "^1.0.0",
     "prettier": "^3.2.4",
     "rollup": "^4.9.6",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-dts": "^6.1.0",
+    "sass": "^1.71.1",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.12",
@@ -58,6 +60,7 @@
   },
   "dependencies": {
     "element-plus": "^2.5.3",
+    "qrcode": "^1.5.3",
     "vue": "^3.4.15"
   }
 }
