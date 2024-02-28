@@ -1,5 +1,6 @@
-import { createApp } from 'vue'
+import { createApp } from '../vue.runtime.esm-browser'
 import App from './App.vue'
 import plugins from './plugins'
 
-createApp(App).use(plugins).mount('#app')
+const a = createApp(App).use(plugins)
+a.mount('#app')

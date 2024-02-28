@@ -1,19 +1,17 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import useCounter from '@/hooks/useCount'
-import feDialog from '@/components/confirm-dialog/index.vue'
-const [count, update] = useCounter(1)
+  import useCounter from '@/hooks/useCount'
+  import FeDialog from '@/components/confirm-dialog/index'
+  const [count, update] = useCounter(1)
 
-const visible = ref(false)
-
-const handleClick = () => {
-  visible.value = true
-}
+  const handleClick = async () => {
+    const res = await FeDialog({ count: 2342 })
+    console.log(res, '----')
+  }
 </script>
 
 <template>
   <div id="test" @click="handleClick">current count: {{ count }}</div>
-  <fe-dialog v-model="visible"></fe-dialog>
+  <!-- <fe-dialog v-model="visible"></fe-dialog> -->
 </template>
 
 <style scoped></style>
