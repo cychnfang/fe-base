@@ -1,0 +1,17 @@
+:root {
+  --bg-color-dark: #1b1b1b;
+  --bg-color-grey: #4e4e4e;
+  --bg-color-ligth: #fff;
+}
+
+@mixin theme-dark {
+ background-color: var(--bg-color-dark);
+}
+
+@mixin theme-light {
+  background-color: var(--bg-color-ligth);
+}
+
+@mixin theme-grey {
+  background-color: var(--bg-color-grey);
+}

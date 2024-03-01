@@ -3,35 +3,52 @@
   import { ref } from 'vue'
 
   const url = ref('1231')
-  const [qrcode, updateQrcode] = useQrcode(url)
-
-  const handleChangeQrcode = () => {
-    updateQrcode('baidu.com')
-  }
+  const [qrcode] = useQrcode(url)
 </script>
 
 <template>
-  <div class="qrcode-ganerate">
+  <div :class="['qrcode-ganerate']">
     <img class="qrcode" :src="qrcode" alt="" />
-    <input type="text" v-model="url" />
-    <span @click="handleChangeQrcode">click</span>
+    <el-input type="textarea" v-model="url" class="url-input"></el-input>
   </div>
 </template>
 
 <style lang="scss">
+  @import '@/scss/themes.scss';
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
+
   .qrcode-ganerate {
+    padding: 10px;
     width: 300px;
     height: 500px;
-    background-color: aqua;
+    overflow: hidden;
+    border-radius: 5px;
     .qrcode {
+      width: 280px;
+      height: 280px;
+      width: 100%;
       display: block;
-      width: 250px;
       margin: 10px auto;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    body .qrcode-ganeratee {
+      @include theme-light;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body .qrcode-ganeratee {
+      @include theme-dark;
+
+      .url-input {
+        @include theme-grey;
+      }
     }
   }
 </style>

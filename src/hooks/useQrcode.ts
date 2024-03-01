@@ -10,10 +10,7 @@ export const useQrcode = (str: Ref<string>) => {
   const updateQrcode = async (str: Ref<string> | string) => {
     qrCodeUrl.value = await QRCode.toDataURL(unref(str), {
       margin: 0,
-      errorCorrectionLevel: 'L',
-      height: 128,
-      colorDark: '#000000',
-      colorLight: '#ffffff'
+      errorCorrectionLevel: 'L'
     })
   }
   return [qrCodeUrl, updateQrcode] as const
