@@ -1,11 +1,13 @@
 <script setup lang="ts">
-  import useCounter from '@/hooks/useCount'
-  import FeDialog from '@/components/confirm-dialog/index'
-  const [count, update] = useCounter(1)
+  import { storeToRefs } from 'pinia'
+  import { useCounterStore } from '@/store/index'
+  import { isRef } from 'vue'
+
+  const countStore = useCounterStore()
+  const { count } = storeToRefs(countStore)
 
   const handleClick = async () => {
-    const res = await FeDialog({ count: 2342 })
-    console.log(res, '----')
+    countStore.increment()
   }
 </script>
 

@@ -6,5 +6,5 @@ export default function useCounter(initialValue = 0) {
   const update = () => {
     count.value++
   }
-  return [count, update] as const
+  return { count, update }
 }

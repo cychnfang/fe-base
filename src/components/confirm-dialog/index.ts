@@ -33,7 +33,6 @@ export default async function FeDialog(
     [slot: string]: Component | Number
   } = {}
 ): Promise<Number> {
-  console.log(21231)
   return new Promise((resolve, reject) => {
     let mountNode: HTMLDivElement | null = document.createElement('div')
 
@@ -44,7 +43,6 @@ export default async function FeDialog(
       },
       {}
     )
-    console.log(1231)
 
     const VNode = h(
       Dialog,
