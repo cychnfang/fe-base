@@ -2,7 +2,7 @@
   import { useQrcode } from '@/hooks/useQrcode'
   import { ref } from 'vue'
 
-  const url = ref('1231')
+  const url = ref('Hello world')
   const [qrcode] = useQrcode(url)
 </script>
 
@@ -26,28 +26,21 @@
     width: 300px;
     height: 500px;
     overflow: hidden;
-    border-radius: 5px;
+    @include theme-grey;
+
     .qrcode {
       width: 280px;
       height: 280px;
       width: 100%;
       display: block;
       margin: 10px auto;
+      border-radius: 5px;
     }
-  }
 
-  @media (prefers-color-scheme: light) {
-    body .qrcode-ganeratee {
-      @include theme-light;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body .qrcode-ganeratee {
-      @include theme-dark;
-
-      .url-input {
-        @include theme-grey;
+    .url-input {
+      .el-textarea__inner {
+        @include theme-dark;
+        color: #fff;
       }
     }
   }
