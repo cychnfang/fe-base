@@ -12,7 +12,11 @@
 </script>
 
 <template>
-  <div id="test" @click="handleClick">current count: {{ count }}</div>
+  <div
+    id="test"
+    @click="handleClick">
+    current count: {{ count }}
+  </div>
   <!-- <fe-dialog v-model="visible"></fe-dialog> -->
 </template>
 

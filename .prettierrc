@@ -2,5 +2,7 @@
   "semi": false,
   "singleQuote": true,
   "trailingComma": "none",
-  "vueIndentScriptAndStyle": true
+  "singleAttributePerLine": true,
+  "vueIndentScriptAndStyle": true,
+  "bracketSameLine": true
 }

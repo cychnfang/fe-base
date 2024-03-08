@@ -3,8 +3,10 @@ lockfileVersion: 5.4
 specifiers:
   '@testing-library/vue': ^8.0.1
   '@types/node': ^20.11.6
+  '@types/urijs': ^1.19.25
   '@typescript-eslint/eslint-plugin': ^6.19.1
   '@typescript-eslint/parser': ^6.19.1
+  '@vitejs/plugin-basic-ssl': ^1.1.0
   '@vitejs/plugin-vue': ^5.0.3
   '@vue/compiler-sfc': ^3.4.15
   '@vue/test-utils': ^2.4.4
@@ -22,7 +24,9 @@ specifiers:
   sass: ^1.71.1
   simple-git-hooks: ^2.9.0
   typescript: ^5.3.3
+  urijs: ^1.19.11
   vite: ^5.0.12
+  vite-plugin-commonjs: ^0.10.1
   vite-tsconfig-paths: ^4.3.1
   vitest: ^1.2.2
   vue: ^3.4.15
@@ -31,14 +35,17 @@ specifiers:
 dependencies:
   element-plus: registry.npmmirror.com/element-plus/2.5.3_vue@3.4.15
   pinia: registry.npmmirror.com/pinia/2.1.7_uvcdd7474ilntvuyfubqjxprie
+  urijs: registry.npmmirror.com/urijs/1.19.11
   vue: registry.npmmirror.com/vue/3.4.15_typescript@5.3.3
   vue-router: registry.npmmirror.com/vue-router/4.3.0_vue@3.4.15
 
 devDependencies:
   '@testing-library/vue': registry.npmmirror.com/@testing-library/vue/8.0.1_yd6qyk4qwtb52hnq5rd6x6i3oa
   '@types/node': registry.npmmirror.com/@types/node/20.11.6
+  '@types/urijs': registry.npmmirror.com/@types/urijs/1.19.25
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/6.19.1_khyhgvqstqrciwjpryeonfnplm
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/6.19.1_xdgzedli73k7lw4xlyzszm74om
+  '@vitejs/plugin-basic-ssl': registry.npmmirror.com/@vitejs/plugin-basic-ssl/1.1.0_vite@5.0.12
   '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/5.0.3_vite@5.0.12+vue@3.4.15
   '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc/3.4.15
   '@vue/test-utils': registry.npmmirror.com/@vue/test-utils/2.4.4_vue@3.4.15
@@ -55,6 +62,7 @@ devDependencies:
   simple-git-hooks: registry.npmmirror.com/simple-git-hooks/2.9.0
   typescript: registry.npmmirror.com/typescript/5.3.3
   vite: registry.npmmirror.com/vite/5.0.12_24i7ujsyfxgebho4wchubwvg3a
+  vite-plugin-commonjs: registry.npmmirror.com/vite-plugin-commonjs/0.10.1
   vite-tsconfig-paths: registry.npmmirror.com/vite-tsconfig-paths/4.3.1_k4vd64pzbncq7ly75tf4y6jxte
   vitest: registry.npmmirror.com/vitest/1.2.2_apr6eqefoahwigsxvk43kq7vte
 
@@ -811,6 +819,12 @@ packages:
     version: 7.5.6
     dev: true
 
+  registry.npmmirror.com/@types/urijs/1.19.25:
+    resolution: {integrity: sha512-XOfUup9r3Y06nFAZh3WvO0rBU4OtlfPB/vgxpjg+NRdGU6CN6djdc6OEiH+PcqHCY6eFLo9Ista73uarf4gnBg==, registry: https://plat-registry-npm.mihoyo.com/, tarball: https://registry.npmmirror.com/@types/urijs/-/urijs-1.19.25.tgz}
+    name: '@types/urijs'
+    version: 1.19.25
+    dev: true
+
   registry.npmmirror.com/@types/web-bluetooth/0.0.16:
     resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==, registry: https://plat-registry-npm.mihoyo.com/, tarball: https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.16.tgz}
     name: '@types/web-bluetooth'
@@ -974,6 +988,18 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==, registry: https://plat-registry-npm.mihoyo.com/, tarball: https://registry.npmmirror.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz}
     name: '@ungap/structured-clone'
     version: 1.2.0
+    dev: true
+
+  registry.npmmirror.com/@vitejs/plugin-basic-ssl/1.1.0_vite@5.0.12:
+    resolution: {integrity: sha512-wO4Dk/rm8u7RNhOf95ZzcEmC9rYOncYgvq4z3duaJrCgjN8BxAnDVyndanfcJZ0O6XZzHz6Q0hTimxTg8Y9g/A==, registry: https://plat-registry-npm.mihoyo.com/, tarball: https://registry.npmmirror.com/@vitejs/plugin-basic-ssl/-/plugin-basic-ssl-1.1.0.tgz}
+    id: registry.npmmirror.com/@vitejs/plugin-basic-ssl/1.1.0
+    name: '@vitejs/plugin-basic-ssl'
+    version: 1.1.0
+    engines: {node: '>=14.6.0'}
+    peerDependencies:
+      vite: ^3.0.0 || ^4.0.0 || ^5.0.0
+    dependencies:
+      vite: registry.npmmirror.com/vite/5.0.12_24i7ujsyfxgebho4wchubwvg3a
     dev: true
 
   registry.npmmirror.com/@vitejs/plugin-vue/5.0.3_vite@5.0.12+vue@3.4.15:
@@ -2115,6 +2141,12 @@ packages:
       is-string: registry.npmmirror.com/is-string/1.0.7
       isarray: registry.npmmirror.com/isarray/2.0.5
       stop-iteration-iterator: registry.npmmirror.com/stop-iteration-iterator/1.0.0
+    dev: true
+
+  registry.npmmirror.com/es-module-lexer/1.4.1:
+    resolution: {integrity: sha512-cXLGjP0c4T3flZJKQSuziYoq7MlT+rnvfZjfp7h+I7K9BNX54kP9nyWvdbwjQ4u1iWbOL4u96fgeZLToQlZC7w==, registry: https://plat-registry-npm.mihoyo.com/, tarball: https://registry.npmmirror.com/es-module-lexer/-/es-module-lexer-1.4.1.tgz}
+    name: es-module-lexer
+    version: 1.4.1
     dev: true
 
   registry.npmmirror.com/es-set-tostringtag/2.0.2:
@@ -4739,6 +4771,12 @@ packages:
       punycode: registry.npmmirror.com/punycode/2.3.1
     dev: true
 
+  registry.npmmirror.com/urijs/1.19.11:
+    resolution: {integrity: sha512-HXgFDgDommxn5/bIv0cnQZsPhHDA90NPHD6+c/v21U5+Sx5hoP8+dP9IZXBU1gIfvdRfhG8cel9QNPeionfcCQ==, registry: https://plat-registry-npm.mihoyo.com/, tarball: https://registry.npmmirror.com/urijs/-/urijs-1.19.11.tgz}
+    name: urijs
+    version: 1.19.11
+    dev: false
+
   registry.npmmirror.com/validate-npm-package-license/3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==, registry: https://plat-registry-npm.mihoyo.com/, tarball: https://registry.npmmirror.com/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz}
     name: validate-npm-package-license
@@ -4770,6 +4808,28 @@ packages:
       - sugarss
       - supports-color
       - terser
+    dev: true
+
+  registry.npmmirror.com/vite-plugin-commonjs/0.10.1:
+    resolution: {integrity: sha512-taP8R9kYGlCW5OzkVR0UIWRCnG6rSxeWWuA7tnU5b9t5MniibOnDY219NhisTeDhJAeGT8cEnrhVWZ9A5yD+vg==, registry: https://plat-registry-npm.mihoyo.com/, tarball: https://registry.npmmirror.com/vite-plugin-commonjs/-/vite-plugin-commonjs-0.10.1.tgz}
+    name: vite-plugin-commonjs
+    version: 0.10.1
+    dependencies:
+      acorn: registry.npmmirror.com/acorn/8.11.3
+      fast-glob: registry.npmmirror.com/fast-glob/3.3.2
+      magic-string: registry.npmmirror.com/magic-string/0.30.5
+      vite-plugin-dynamic-import: registry.npmmirror.com/vite-plugin-dynamic-import/1.5.0
+    dev: true
+
+  registry.npmmirror.com/vite-plugin-dynamic-import/1.5.0:
+    resolution: {integrity: sha512-Qp85c+AVJmLa8MLni74U4BDiWpUeFNx7NJqbGZyR2XJOU7mgW0cb7nwlAMucFyM4arEd92Nfxp4j44xPi6Fu7g==, registry: https://plat-registry-npm.mihoyo.com/, tarball: https://registry.npmmirror.com/vite-plugin-dynamic-import/-/vite-plugin-dynamic-import-1.5.0.tgz}
+    name: vite-plugin-dynamic-import
+    version: 1.5.0
+    dependencies:
+      acorn: registry.npmmirror.com/acorn/8.11.3
+      es-module-lexer: registry.npmmirror.com/es-module-lexer/1.4.1
+      fast-glob: registry.npmmirror.com/fast-glob/3.3.2
+      magic-string: registry.npmmirror.com/magic-string/0.30.5
     dev: true
 
   registry.npmmirror.com/vite-tsconfig-paths/4.3.1_k4vd64pzbncq7ly75tf4y6jxte:
