@@ -2,10 +2,12 @@ import { defineConfig, createServer } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import commonjs from 'vite-plugin-commonjs'
 import basicSsl from '@vitejs/plugin-basic-ssl'
+import myPlugin from './svg'
 
 export default defineConfig({
   mode: 'developement',
   plugins: [
+    myPlugin(),
     commonjs(),
     vue(),
     basicSsl({
