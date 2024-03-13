@@ -7,7 +7,7 @@
 
 <template>
   <test-component></test-component>
-  <svg-icon></svg-icon>
+  <svg-icon name="icon-copy"></svg-icon>
 
   <p>app: {{ store.count }}</p>
 </template>
